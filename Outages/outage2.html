@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidents - STDE</title>
+</head>
+<body>
+    <button class="panel" style="background: #C44031;"></button><p class="history-problem">Unsaved Data / datastore failure</p><p class="status">Service Disruption</p><button class="history-problem-status" style="background: white;"></button>
+    <p class="incident-status">Incident Status: Service Disruption</p><p class="components">Components: N/A</p><p class="locations">Locations: DataStore</p><p class="incident-updates">November 13, 7:47pm PDT [Investigating] Trying to find the reason for datafailure.</p><p class="incident-updates">November 13, 7:55pm PDT[Identified] Recovery is underway.</p><p class="incident-updates">November 13, 8:11pm PDT [Resolved] Problem fixed.</p><p class="incident-updates"></p>
+    <style>
+        .panel{
+    width: 900px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 290px;
+    border-radius: 5px;
+    border: 0px solid;
+}
+.sections{
+    width: 900px;
+    height: 635px;
+    margin-top: 50px;
+    margin-left: 290px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.user{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -625px;
+    margin-left: 300px;
+}
+.Image{
+    background: rgb(255, 255, 255) url(olliebloxNewOfficialLogo!\ \(2\).png) no-repeat center;
+    background-size: 40%;
+    width: 800px;
+    height: 170px;
+    margin-left: 350px;
+}
+.website{
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 310px;
+}
+.Websitestatus{
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 1100px;opacity: 0.9;
+    margin-top: -30px;
+}
+.inside-of-panel{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 310px;
+    margin-top: -40px;
+    color: rgb(247, 247, 247);
+}
+.just-updated{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 970px;
+    margin-top: -40px;
+    color: rgb(247, 247, 247);
+}
+.player{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0px;
+    margin-left: 300px;
+}
+.history{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0px;
+    margin-left: 300px;
+}
+.history-problem{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 310px;
+    margin-top: -37px;
+    color: rgb(247, 247, 247);
+}
+.status{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 980px;
+    margin-top: -31px;
+    color: rgb(247, 247, 247);
+}
+.history-problem-status{
+    width: 900px;
+    height: 430px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    margin-left: 290px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-top: 0px solid;
+}
+.incident-status{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 310px;
+    margin-top: -420px
+}
+.components{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 310px;
+    margin-top: 40px
+}
+.locations{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 310px;
+    margin-top: 40px
+}
+.incident-updates{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 310px;
+}
+#preloader{
+    background: rgb(255, 255, 255) url(loadingforabout.gif) no-repeat center center;
+    background-size: 5%;
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+.panel-for-mobile{
+    display: none;
+}
+.just-updated-mobile{
+    display: none;
+}
+@media (max-width: 680px){
+    .panel{
+       width: 500px; 
+       height: 50px;
+       margin-left: 46px;
+    }
+    .sections{
+        width: 500px;
+        margin-left: 46px;
+    } 
+    .user{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: -560px;
+        margin-left: 50px;
+    } 
+    .website{
+        font-size: 15px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 75px;
+    } 
+    .player{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 0px;
+        margin-left: 50px;
+    }  
+    .Websitestatus{
+        font-size: 15px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 450px;
+        margin-top: -30px
+    } 
+    .inside-of-panel{
+        margin-left: 60px
+    } 
+    .panel-for-mobile{
+        margin-left: 46px;
+        width: 500px; 
+        height: 50px;
+        margin-top: 20px;
+        border: 0px solid;
+        border-radius: 5px;
+        display: block;
+    }
+    .just-updated-mobile{
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 60px;
+        margin-top: -34px;
+        color: rgb(247, 247, 247);
+        display: block;
+    }
+    .Image{
+        background: rgb(255, 255, 255) url(Icon-site.png);
+        width: 500px;
+        height: 170px;
+        margin-left: 46px;
+    }
+    .history-problem-status{
+        width: 500px;
+        height: 470px;
+        margin-left: 46px;
+        margin-top: 0px;
+    }
+    .history{
+        margin-left: 50px;
+    }
+    .history-problem{
+        margin-left: 75px;
+    }
+    .status{
+        margin-left: 400px;
+    }
+    .incident-status{
+        margin-left: 75px;
+    }
+    .components{
+        margin-left: 75px;
+    }
+    .locations{
+        margin-left: 75px;
+    }
+    .incident-updates{
+        margin-left: 75px;
+    }
+    .just-updated{
+        display: none;
+    }
+    #preloader{
+        background-size: 14%;
+    }
+}
+    </style>
+</body>
+</html>
